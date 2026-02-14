@@ -46,7 +46,6 @@ button{
 #no{
   background:white;
   color:#ff4d6d;
-  position:absolute;
 }
 
 button:hover{
@@ -73,6 +72,7 @@ button:hover{
 const btnNo = document.getElementById("no");
 
 btnNo.addEventListener("mouseover", function(){
+  btnNo.style.position = "absolute";
   const x = Math.random() * (window.innerWidth - 100);
   const y = Math.random() * (window.innerHeight - 50);
   btnNo.style.left = x + "px";
@@ -101,6 +101,7 @@ document.addEventListener("click", function(){
 
 </body>
 </html>
+
 
 
 
