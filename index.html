@@ -57,9 +57,10 @@ button:hover{
 
 <body>
 
-<audio autoplay loop>
+<audio id="musica" loop>
   <source src="23.mp3" type="audio/mpeg">
 </audio>
+
 
 <h2>💫💕 Elizabeth 💕💫</h2>
 <h1>💖 ¿Quieres ser mi San Valentín? 💖</h1>
@@ -68,6 +69,7 @@ button:hover{
 <button id="no">🙈 No</button>
 
 <script>
+
 const btnNo = document.getElementById("no");
 
 btnNo.addEventListener("mouseover", function(){
@@ -85,7 +87,14 @@ document.getElementById("si").addEventListener("click", function(){
     link.click();
     document.body.removeChild(link);
 });
+
+document.addEventListener("click", function(){
+  const musica = document.getElementById("musica");
+  musica.play();
+}, { once: true });
+
 </script>
 
 </body>
 </html>
+
