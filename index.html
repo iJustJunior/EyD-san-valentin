@@ -80,12 +80,16 @@ btnNo.addEventListener("mouseover", function(){
 });
 
 document.getElementById("si").addEventListener("click", function(){
+
+    alert("Awww aceptaste, te amooo muchooo 🥺💗\nAhora, abre el regalito que descargaste...");
+
     const link = document.createElement("a");
     link.href = "Feliz San Valentín.pdf";
     link.download = "Feliz San Valentín.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+
 });
 
 document.addEventListener("click", function(){
@@ -97,4 +101,5 @@ document.addEventListener("click", function(){
 
 </body>
 </html>
+
 
